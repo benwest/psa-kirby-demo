@@ -1,0 +1,5 @@
+title: Artwork
+accept: image/*
+fields:
+  caption:
+    type: text

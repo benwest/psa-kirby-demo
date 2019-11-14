@@ -1,0 +1,48 @@
+title: Exhibition
+columns:
+  - width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+          startDate:
+            label: Start Date
+            type: date
+            width: 1/3
+            translate: false
+          endDate:
+            label: End Date
+            type: date
+            width: 1/3
+            translate: false
+          location:
+            type: text
+            width: 1/3
+          description:
+            type: textarea
+            buttons:
+              - bold
+              - italic 
+              - link
+              - email
+          credits:
+            type: structure
+            fields:
+              role:
+                type: text
+                width: 1/2
+              name:
+                type: text
+                width: 1/2
+  - width: 1/3
+    sections:
+      poster:
+        type: files
+        min: 1
+        max: 1
+        template: poster
+        layout: cards
+      exhibitionWorks:
+        headline: Exhibition Works
+        type: files
+        template: artwork

@@ -1,0 +1,10 @@
+title: Site
+unlisted: true
+sections:
+  exhibitions:
+    type: pages
+    parent: site.find('exhibitions')
+    templates: exhibition
+    layout: cards
+    size: medium
+    image: page.files.template('poster').first
